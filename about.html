@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body {
+            font-family: "Poppins", sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #061230;
+            color: #ffffff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #061230;
+            color: #0ef;
+            padding-top: 30px;
+            min-height: 70px;
+            animation: Slideleft 1s ease forwards;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            animation: Navmenu 1s ease forwards;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: right;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header a:hover {
+            color: #0ef;
+            font-weight: bold;
+        }
+        
+        #main {
+            padding: 30px;
+            background: #061230;
+        }
+        footer {
+            background: #ffffff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        .part1{
+            animation: Parts1 1s ease forwards;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+
+        .part2{
+            animation: Parts2 1s ease forwards;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+
+        p {
+            line-height: 27px;
+            margin: 20px 0px 40px 0px;
+            animation: slideleftP 1s ease forwards;
+            opacity: 0;
+            animation-delay: 1s;
+        }
+
+        h1 {
+            animation: slidelefth 1s ease forwards;
+            opacity: 0;
+            animation-delay: 1s;
+        }
+
+        @keyframes Slideleft {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes Parts1 {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes Parts2 {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideleftP {
+            0% {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slidelefth {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1 class="part1">NADIMPALLI SAI PRANEETH VARMA</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="part2">Home</a></li>
+                    <li><a href="about.html" class="part2">About</a></li>
+                    <li class="current"><a href="skills.html" class="part2">Skills</a></li>
+                    <li><a href="projects.html" class="part2">Projects</a></li>
+                    <li><a href="contact.html" class="part2">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main" class="container">
+        <h1>About Me</h1>
+        <p>Welcome to my portfolio! I am N Sai Praneeth Varma, studying B.Tech in KL University.</p>
+        <p> I have learned and experienced in Front-End Development. I am looking forward to work as a Front-end Developer.
+            I developed a project using two languages and softwares, which i have done as semester projects and thinking to develop the project as IT project level.
+            In this process I have learned a lot of skills, techniques, methods and languages to work on the softwares.
+        </p>
+        

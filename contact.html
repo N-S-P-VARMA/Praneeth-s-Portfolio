@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #061230;
+            color: #ffffff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background:  #061230;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #061230 3px solid;
+            animation: slide1 1s ease forwards;
+            opacity: 0;
+            animation-delay: 1s;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: right;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #0ef;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #0ef;
+            font-weight: bold;
+        }
+        .main-content {
+            padding: 20px;
+            background: #061230;
+            margin-top: 20px;
+        }
+        form {
+            margin: 20px 0;
+            padding: 20px;
+            background: #061230;
+            border: 1px #061230 solid;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        form button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #0ef;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .part3 {
+            animation: part3 1s ease forwards;
+            animation-delay: 1s ;
+            opacity: 0;
+        }
+
+        h1 {
+            animation: slideh 1s ease forwards;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+
+        .part4 {
+            animation: part4 1.3s ease forwards;
+            animation-delay: 1.3s;
+            opacity: 0;
+        }
+
+        @keyframes slide1 {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes part3 {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideh {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes part4 {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">My</span> Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="part3">Home</a></li>
+                    <li><a href="about.html" class="part3">About</a></li>
+                    <li class="current"><a href="contact.html" class="part3">Contact</a></li>
+                    <li><a href="skills.html" class="part3">Skills</a></li>
+                    <li><a href="projects.html" class="part3">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container main-content">
+        <h1>Contact Me</h1>
+        <form>
+            <label for="name" class="part4">Name : N Sai Praneeth Varma</label>
+            <br>
+            <br>
+
+            <label for="email" class="part4">Email : saipraneethvarma22@gmail.com</label>
+            <br>
+            <br>
+
+            <label for="mobile" class="part4">Ph.No : +91 9515620319</label>
+            <br>
+            <br>
+
+            <label for="message" class="part4">Message : For more information or any doubts regarding my portfolio contact me !</label>
+            <br>
+            <br>
+
+        </form>
+    </div>
+</body>
+</html>

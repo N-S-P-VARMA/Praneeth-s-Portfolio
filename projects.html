@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #061230;
+            color: #ffffff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #061230;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #061230 3px solid;
+            animation: pro1 1s ease forwards;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: right;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #0ef;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #cccccc;
+            font-weight: bold;
+        }
+        .main-content {
+            padding: 20px;
+            background: #061230;
+            margin-top: 20px;
+        }
+        .project {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #061230;
+            background: #061230;
+        }
+        .project h2 {
+            color: #0ef;
+            margin-top: 0;
+        }
+
+        .part6 {
+            animation: part6 1s ease forwards;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+
+        @keyframes pro1 {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes part6 {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">My</span> Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li class="current"><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container main-content">
+        <h1 class="part6">My Projects</h1>
+        <div class="project">
+            <h2 class="part6">Movie/Tv Show Recommendation System</h2>
+            <p class="part6">Developed using Python in the PyCharm Integrated Development Environment (IDE), this project leverages collaborative filtering, content-based filtering, and a hybrid model to deliver accurate and personalized recommendations. The system processes user data and preferences, applying various algorithms to predict and recommend movies and TV shows that users are likely to enjoy.</p>
+            <p class="part6">Technologies Used:</p>
+            <p class="part6"> Programming Language: Python, 
+                IDE: PyCharm.
+                <p class="part6">
+                Libraries and Frameworks:</p>
+                <p class="part6">
+                Pandas and NumPy: For data manipulation and analysis,
+                Scikit-Learn: For implementing machine learning algorithms,
+                Flask: For creating the web application,
+                HTML, CSS, JavaScript: For developing the front-end interface.
+        </div>
+        <div class="project">
+            <h2 class="part6">Weather App</h2>
+            <p class="part6">Project Description:</p>
+            <p class="part6">
+                Developed using Python in the PyCharm Integrated Development Environment (IDE), 
+                this project integrates external weather APIs to fetch and display weather data. 
+                The application features a clean and responsive design, making it accessible and 
+                easy to use on both desktop and mobile devices.</p>
+                <p class="part6">Technologies Used:</p>
+                <p class="part6">
+                    Programming Language: Python,
+                    IDE: PyCharm
+                </p>
+                <p class="part6">
+                    Libraries and Frameworks:</p>
+                    <p class="part6">
+                    Requests: For making API calls to fetch weather data,
+                    Flask: For creating the web application ,
+                    Tkinter/Qt: For developing the desktop application interface,
+                    HTML, CSS, JavaScript: For developing the front-end interface.</p>
+        </div>
+        <div class="project">
+            <h2 class="part6">Tic-Tac-Toe Game</h2>
+            <p class="part6">Project Description:
+                Developed using HTML, CSS, and JavaScript, this project provides an interactive platform for users
+                 to play Tic Tac Toe against another player or an AI opponent. 
+                 The game includes essential features such as real-time updates, 
+                 game state management, and user-friendly controls.</p>
+                 <p class="part6">Technologies Used: </p>
+                 <p class="part6">
+                    HTML: For structuring the web pages and creating the Tic Tac Toe grid</p>
+                  <p class="part6">CSS: For styling the game board and user interface to enhance visual appeal.</p>
+                   <p class="part6">JavaScript: For implementing game logic, handling user interactions, and updating the game state in real-time,
+                 </p>
+
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+</body>
+</html>
